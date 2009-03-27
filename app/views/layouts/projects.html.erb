@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Projects: <%= controller.action_name %></title>
+  <%#= stylesheet_link_tag 'scaffold' %>
+ <%= stylesheet_link_tag 'blueprint/screen.css', :media => 'screen, projection' %>
+  <%= stylesheet_link_tag 'blueprint/print.css', :media => 'print' %>
+  <%#= stylesheet_link_tag 'default.css', :media => 'screen, projection' %>
+  <%= stylesheet_link_tag 'myStyle' %>
+  <!--[if IE]>
+  <%= stylesheet_link_tag 'blueprint/ie.css', :media => 'screen, projection' %>
+  <![endif]-->
+
+</head>
+<body>
+<div id="main_wrapper" class="span-24 prepend-6 last">
+<p style="color: green"><%= flash[:notice] %></p>
+
+<%= yield %>
+</div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyText
+  description: MyText
+  group_of_task_id: 1
+
+two:
+  name: MyText
+  description: MyText
+  group_of_task_id: 1

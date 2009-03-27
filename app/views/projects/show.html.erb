@@ -1,0 +1,27 @@
+<h1 id="header"><%=h @project.name %></h1>
+<%= @project.description %>
+<h1 id="header">Groups of tasks:</h1>
+<% if @project.group_of_tasks.empty? %>
+  <b>There is no group of tasks for this project</b>
+  <br />
+<% end %>
+  <% @project.group_of_tasks.each do |c| %>
+    
+    <p>
+      <b>Name:</b>
+      <%=h c.name %>
+    </p>
+
+    <p>
+      <b>Description:</b>
+      <%=h c.description %>
+    </p>
+
+    <%= link_to 'Edit this group of task', :controller => 'group_of_tasks', :action => 'edit', :id => c.id %>
+    <br />
+    -----------------------
+  <% end %>
+  <br />
+<% h(@project.group_of_tasks.name) %>
+
+<%= link_to 'Back', projects_path %>

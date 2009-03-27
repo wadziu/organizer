@@ -1,0 +1,25 @@
+/* 
+    Document   : myStyle
+    Created on : 2009-03-26, 18:01:24
+    Author     : wadziu
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+body{
+  font-family: 'MS Trebuchet ';
+  font-size:   12px;
+  background-color: #ffffff;
+}
+
+
+#main_wrapper{
+  margin: auto;
+  width: 750px;
+  background-color: #ffffff;
+}

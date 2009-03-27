@@ -1,0 +1,18 @@
+<p>
+  <b>Name:</b>
+  <%=h @group_of_task.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @group_of_task.description %>
+</p>
+
+<p>
+  <b>Project:</b>
+  <%=h @group_of_task.project.name %>
+</p>
+
+
+<%= link_to 'Edit', edit_group_of_task_path(@group_of_task) %> |
+<%= link_to 'Back', group_of_tasks_path %>

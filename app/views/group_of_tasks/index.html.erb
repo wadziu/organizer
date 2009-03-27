@@ -1,0 +1,24 @@
+<h1>Listing group_of_tasks</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Project</th>
+  </tr>
+
+<% @group_of_tasks.each do |group_of_task| %>
+  <tr>
+    <td><%=h group_of_task.name %></td>
+    <td><%=h group_of_task.description %></td>
+    <td><%=h group_of_task.project.name %></td>
+    <td><%= link_to 'Show', group_of_task %></td>
+    <td><%= link_to 'Edit', edit_group_of_task_path(group_of_task) %></td>
+    <td><%= link_to 'Destroy', group_of_task, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New group_of_task', new_group_of_task_path %>
