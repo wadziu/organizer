@@ -18,10 +18,10 @@
     </p>
 
     <%= link_to 'Edit this group of task', :controller => 'group_of_tasks', :action => 'edit', :id => c.id %>
+    <%= link_to 'Show details', :controller => 'group_of_tasks', :action => 'show', :id => c.id %>
+
     <br />
     -----------------------
   <% end %>
   <br />
-<% h(@project.group_of_tasks.name) %>
-
 <%= link_to 'Back', projects_path %>
