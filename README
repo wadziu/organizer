@@ -5,6 +5,7 @@ This is first part and whole thing is not finished yet.
 == GOALS AND FUNCTIONALITY ==
 Application should be helpfull to organize programmers work for small size projects.
 
+----------------------------
 Short Structure of organizer:
 Each project has many group of tasks and each of them has_many tasks
 
@@ -18,10 +19,12 @@ I. Project:
   2. group of task
     d.task
     e.task
+----------------------------
+
+Application uses CSS blueprint framework
 
 == TODO ==
 * add correct path of generating tasks attached to groups
 * add translation
 * add simple RBAC
 * add gantta diagrams generator
-* add new css
