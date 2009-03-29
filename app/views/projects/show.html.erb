@@ -1,11 +1,13 @@
 <h1 id="header"><%=h @project.name %></h1>
 <%= @project.description %>
+
 <h1 id="header">Groups of tasks:</h1>
 <% if @project.group_of_tasks.empty? %>
   <b>There is no group of tasks for this project</b>
   <br />
 <% end %>
-  <% @project.group_of_tasks.each do |c| %>
+
+<% @project.group_of_tasks.each do |c| %>
     
     <p>
       <b>Name:</b>
@@ -16,6 +18,13 @@
       <b>Description:</b>
       <%=h c.description %>
     </p>
+    <b>Tasks:</b><br />
+    <% c.tasks.each do |a| %>
+      <b>Name:</b>
+      <%= a.name %>
+    <% end %>
+
+    <br />
 
     <%= link_to 'Edit this group of task', :controller => 'group_of_tasks', :action => 'edit', :id => c.id %>
     <%= link_to 'Show details', :controller => 'group_of_tasks', :action => 'show', :id => c.id %>
